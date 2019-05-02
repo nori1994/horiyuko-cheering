@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>堀裕子をよろしく！</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="./js/timer.js"></script>
+        <script type="text/javascript" src="./js/counter.js"></script>
+    </head>
+    <body onload="start_timer();">
+        <div id="score_area">
+            <p>SCORE</p>
+            <p id="count">0</p>
+        </div>
+        <div class="button_on_img">
+            <img id="spoon_img" src="./asset/syokki_spoon.png">
+            <div id="psychic_counter_area">
+                <input id="psychic_counter"
+                    type="button"
+                    onclick="count_up();"
+                    value="一緒に念じる">
+                <!--
+                <input id="psychic_counter"
+                    type="image"
+                    onclick="count_up();"
+                    src="./asset/pray-button.png">
+                    -->
+            </div>
+        </div>
 
+    </body>
+</html>
