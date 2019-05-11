@@ -10,11 +10,17 @@ function count_up() {
 }
 
 // URLはあくまでHTMLから見た
-const img = new Array("./asset/spoon_bented_success.png");
-function change_img() {
-    if (counter > 0) {
-        document.getElementById("spoon_img").src = img[0];
+const result_img = new Array("./asset/desk_mashroom_increased.png", "./asset/window_ame.png", "./asset/sppon_bented_success.png");
+function change_result_img() {
+    if (counter > 80) {
+        document.getElementById("spoon_img").src = result_img[2];
+    } else if (counter > 60) {
+        document.getElementById("window_img").src = result_img[1];
+    } else if (counter > 1) {
+        document.getElementById("desk_img").src = result_img[0];
     }
 }
+
+
 
 

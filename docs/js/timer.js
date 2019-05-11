@@ -15,7 +15,7 @@ function show_result() {
     psychic_counter.disabled = true;
 
     // 画像切り替え
-    change_img();
+    change_result_img();
 
     // スコア表示
     document.getElementById("score_area").style.visibility = "visible";
@@ -30,6 +30,7 @@ function count_start() {
     document.getElementById("count_down").style.visibility = "hidden";
 
     setInterval(count_down, 1000);
+    setInterval(change_pray_img, 1000);
 
     //これではhiddenにならぬ
     //document.getElementById("score").style.visibility = "hidden";
@@ -45,5 +46,17 @@ function count_down(time_limmit) {
         time.innerText = 0;
     } else {
         time.innerText = time_limmit - 1;
+    }
+}
+
+const pray_img = new Array("./asset/sppon_bented_right.png", "./asset/sppon_bented_left.png");
+function change_pray_img() {
+    var time = document.getElementById("time");
+    var time_limmit = parseInt(time.innerText);
+
+    if (time_limmit % 2 == 0) {
+        document.getElementById("spoon_img").src = pray_img[0];
+    } else {
+        document.getElementById("spoon_img").src = pray_img[1];
     }
 }
