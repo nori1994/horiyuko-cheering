@@ -10,9 +10,11 @@ function count_up() {
 }
 
 // URLはあくまでHTMLから見た
-const img = new Array("./asset/syokki_spoon2.png");
+const img = new Array("./asset/spoon_bented_success.png");
 function change_img() {
     if (counter > 0) {
         document.getElementById("spoon_img").src = img[0];
     }
 }
+
+

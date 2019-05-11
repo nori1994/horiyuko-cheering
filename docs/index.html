@@ -7,25 +7,47 @@
         <script type="text/javascript" src="./js/timer.js"></script>
         <script type="text/javascript" src="./js/counter.js"></script>
     </head>
-    <body onload="start_timer();">
-        <div id="score_area">
-            <p>SCORE</p>
-            <p id="count">0</p>
+    <body>
+        <div id="count_up_area" class="inline_block">
+            <p class="text">TIME</p>
+            <p id="time" class="text">10</p>
         </div>
-        <div class="button_on_img">
-            <img id="spoon_img" src="./asset/syokki_spoon.png">
-            <div id="psychic_counter_area">
-                <input id="psychic_counter"
-                    type="button"
-                    onclick="count_up();"
-                    value="一緒に念じる">
-                <!--
-                <input id="psychic_counter"
+        <div id="score_area" class="inline_block">
+            <p class="text">SCORE</p>
+            <p id="count" class="text">0</p>
+        </div>
+
+        <div>
+            <div class="desk_img_area" class="inline_block">
+                <img id="desk_img" src="./asset/desk_mashroom .png">
+            </div>
+            <div class="button_on_img" class="inline_block">
+                <img id="spoon_img" src="./asset/spoon.png">
+                <div class="psychic_counter_area">
+                    <input id="count_down"
+                        type="button"
+                        onclick="count_start();"
+                        value="はじめる">
+                    <input id="psychic_counter"
+                        type="button"
+                        onclick="count_up();"
+                        value="一緒に念じる"
+                        disabled="disabled">
+                    <!--
+                <input id="psychic_counter_button"
                     type="image"
                     onclick="count_up();"
                     src="./asset/pray-button.png">
-                    -->
+                -->
+                </div>
             </div>
+            <div class="window_img_area" class="inline_block">
+                <img id="window_img" src="./asset/window_hare.png">
+            </div>
+        </div>
+
+        <div id="description_area">
+            <p class="text">時間内までにたくさん念じよう</p>
         </div>
 
     </body>

@@ -1,18 +1,103 @@
 @charset "UTF-8";
+
+
+div.inline_block{
+    display: inline-block;
+    /*上手くいかない
+    float: left;*/
+    margin: 0.5em;
+}
+
 #score_area{
     visibility: hidden;
 }
 
-#psychic_counter_area{
+
+.text{
+    display: inline-block;
+    color: rgb(245, 229, 182);
+    letter-spacing:0.2em;
+    margin: 0.2em;
+    text-shadow: 
+    black 2px 0px,  black -2px 0px,
+    black 0px -2px, black 0px 2px,
+    black 2px 2px , black -2px 2px,
+    black 2px -2px, black -2px -2px,
+    black 1px 2px,  black -1px 2px,
+    black 1px -2px, black -1px -2px,
+    black 2px 1px,  black -2px 1px,
+    black 2px -1px, black -2px -1px;
+}
+
+.psychic_counter_area{
     position: absolute;
     top: 80%;
-    right: 80%;
+    left:0;right:0;
+    text-align: center;
 }
 
 #spoon_img{
-    height: 300px;
-    widows: 100px;
+    max-width: 90%;
+    height: auto;
 }
+
 .button_on_img{
     position: relative;
 }
+
+#psychic_counter {
+	position: relative;
+	display: block;
+	width: 120px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	background: #e89b55;
+	border-bottom: 2px solid rgb(185, 101, 25);
+	border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+#psychic_counter:active {
+	border-bottom: 2px solid rgb(185, 101, 25);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+#count_down {
+	position: relative;
+	display: block;
+	width: 120px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+	background: rgb(252, 146, 183);
+	border-bottom: 2px solid rgb(252, 106, 163);
+	border-radius: 4px;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    
+}
+
+#count_down:active {
+	border-bottom: 2px solid rgb(252, 106, 163);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+#desk_img{
+    max-width: 35%;
+    height: auto;
+}
+
+#window_img{
+    max-width: 20%;
+    height: auto;
+}
+/*
+.desk_img_area, .button_on_img, .window_img_area{
+     何故かきかない
+    float: left;
+}
+*/
