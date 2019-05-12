@@ -33,53 +33,5 @@ function change_result_img() {
     }
 }
 
-function create_dialog() {
-    // ------------------------------------------------------------
-    // カスタムダイアログを使用する
-    // ------------------------------------------------------------
-    // カスタムダイアログを生成
-    var custom_dialog = new CustomDialog();
-
-    // 幅を設定する
-    custom_dialog.setWidth(500);
-
-    // メッセージを設定
-    custom_dialog.setMessage("aaa");
-
-    // エレメントを取得
-    var element_body = custom_dialog.getElement();
-
-
-    // ------------------------------------------------------------
-    // HTML 文字列を指定して、DOM オブジェクトをまとめて構築する
-    // ------------------------------------------------------------
-    element_body.innerHTML = '' +
-        '<table style="width:100%">' +
-        '	<tr><td style="width:100px; text-align:right;">引数：</td><td><input id="custom_dialog_input_argument" value="" style="width:100%" disabled></td></tr>' +
-        '	<tr><td style="width:100px; text-align:right;">戻り値：</td><td><input id="custom_dialog_input_return" value="" style="width:100%"></td></tr>' +
-        '</table>';
-
-    // ID 属性が "custom_dialog_input_argument" であるエレメントを取得
-    var custom_dialog_input_argument = document.getElementById("custom_dialog_input_argument");
-
-    // ID 属性が "custom_dialog_input_return" であるエレメントを取得
-    var custom_dialog_input_return = document.getElementById("custom_dialog_input_return");
-
-    // カスタムダイアログのコントロールに値をセット
-    custom_dialog_input_argument.value = input_argument.value;
-    custom_dialog_input_return.value = "返信テスト";
-
-
-    // ------------------------------------------------------------
-    // 終了時に実行されるイベント
-    // ------------------------------------------------------------
-    custom_dialog.onclose = function () {
-
-        // カスタムダイアログのコントロールから値を取得
-        input_return.value = custom_dialog_input_return.value;
-    };
-
-}
-
 
 
