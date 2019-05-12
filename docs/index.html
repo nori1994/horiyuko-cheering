@@ -12,21 +12,70 @@
             <p class="text">TIME</p>
             <p id="time" class="text">10</p>
         </div>
-        <div id="score_area" class="inline_block">
-            <p class="text">SCORE</p>
-            <p id="count" class="text">0</p>
-        </div>
+
         <div class="office_area">
             <table cellpadding="0" cellspacing="0">
                 <tr>
-                    <td class="td_base">
-                        <div class="desk_img_area" class="inline_block">
-                            <img id="desk_img" src="./asset/desk_mashroom .png">
+                    <td class="td_vertical_align_bottom inline_block
+                        button_on_img">
+                        <div>
+                            <div class="balloon-right" id="success_result_area">
+                                <div id="success_score_area" class="inline_block
+                                    score_area">
+                                    <p class="text">SCORE</p>
+                                    <p id="success_count" class="text">0</p>
+                                </div>
+                                <div>
+                                    <p>スプーン曲げに成功しました！</p>
+                                    <p>「…ムンッ！曲がりました！」</p>
+                                </div>
+                            </div>
+                            <div class="desk_img_area inline_block">
+                                <img id="desk_img"
+                                    src="./asset/desk_mashroom.png">
+                            </div>
                         </div>
                     </td>
                     <td class="td_base">
-                        <div class="button_on_img" class="inline_block">
+                        <div class="button_on_img inline_block">
                             <img id="spoon_img" src="./asset/spoon.png">
+                            <div class="balloon-left" id="desk_result_area">
+                                <div id="desk_score_area"
+                                    class="inline_block
+                                    score_area">
+                                    <p class="text">SCORE</p>
+                                    <p id="desk_count" class="text">0</p>
+                                </div>
+                                <div>
+                                    <p>プロデューサーの机の下の</p>
+                                    <p>キノコが育ったようだ…</p>
+                                </div>
+                            </div>
+                            <div class="balloon-right"
+                                id="window_result_area">
+                                <div id="window_score_area"
+                                    class="inline_block
+                                    score_area">
+                                    <p class="text">SCORE</p>
+                                    <p id="window_count" class="text">0</p>
+                                </div>
+                                <div>
+                                    <p>お仕置きサイキックが発動！</p>
+                                    <p>雨が降ってしまったようだ…</p>
+                                </div>
+                            </div>
+                            <div class="balloon" id="no_pray_result_area">
+                                <div id="no_pray_score_area"
+                                    class="inline_block
+                                    score_area">
+                                    <p class="text">SCORE</p>
+                                    <p id="no_pray_count" class="text">0</p>
+                                </div>
+                                <div>
+                                    <p>サイキックパワーが足りなかった…</p>
+                                    <p>下のボタンを押して一緒に念じよう</p>
+                                </div>
+                            </div>
                             <div class="psychic_counter_area">
                                 <input id="count_down"
                                     class="button_base"
@@ -50,7 +99,8 @@
                     </td>
                     <td class="td_vertical_align_top">
                         <div class="window_img_area" class="inline_block">
-                            <img id="window_img" src="./asset/window_hare.png">
+                            <img id="window_img"
+                                src="./asset/window_hare.png">
                         </div>
                     </td>
                 </tr>
@@ -62,7 +112,11 @@
                     </td>
                 </tr>
             </table>
-
         </div>
+        <dialog>
+            <div class="box14">
+                <p>ここに文章</p>
+            </div>
+        </dialog>
     </body>
 </html>

@@ -2,16 +2,29 @@
 table{
     widows: 100%;
     table-layout: fixed;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 0px;
 }
 
 div.inline_block{
+    /*改行しないようにする
     display: inline-block;
+    */
     /*上手くいかない
     float: left;*/
+    text-align: center;
+    vertical-align: middle;
     margin: 0.5em;
 }
 
-#score_area{
+.text_align_left{
+    text-align: left;
+}
+
+.score_area{
     visibility: hidden;
 }
 
@@ -35,8 +48,8 @@ div.inline_block{
 
 .psychic_counter_area{
     position: absolute;
-    top: 80%;
-    left:40%;
+    top: 65%;
+    left:37%;
     right:0;
     /*
     transform: translateY(-50%) translateX(-50%);
@@ -58,7 +71,7 @@ div.inline_block{
 
 .button_on_img{
     position: relative;
-    display:flex;
+    /*display:flex;*/
 
 }
 
@@ -95,20 +108,20 @@ div.inline_block{
 	text-decoration: none;
     color: #FFF;
     font-weight: bold;
-	background: rgb(252, 146, 183);
-	border-bottom: 2px solid rgb(252, 106, 163);
+	background: rgb(146, 188, 252);
+	border-bottom: 2px solid rgb(146, 222, 252, 0.801);
 	border-radius: 4px;
     box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
     
 }
 
 #count_down:active {
-	border-bottom: 2px solid rgb(252, 106, 163);
+	border-bottom: 2px solid rgb(146, 222, 252, 0.801);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
 }
 
 #desk_img{
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -119,6 +132,10 @@ div.inline_block{
 
 .td_vertical_align_top{
     vertical-align:top;
+}
+
+.td_vertical_align_bottom{
+    vertical-align:bottom;
 }
 
 .td_base{
@@ -138,3 +155,126 @@ div.inline_block{
     float: left;
 }
 */
+
+.box14{
+    padding: 0.2em 0.5em;
+    margin: 2em 0;
+    background: #d6ebff;
+    box-shadow: 0px 0px 0px 10px #d6ebff;
+    border: dashed 2px white;
+}
+.box14 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.balloon-left {
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: black;
+    font-size: 16px;
+    background: #e0edff;
+    top: 50%;
+    left: 0;
+    right: 0;
+  }
+  
+  .balloon-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+  }
+  
+  .balloon-left p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .balloon-right {
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: black;
+    font-size: 16px;
+    background: #e0edff;
+    top: 5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .balloon-right:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 15px solid #e0edff;
+  }
+  
+  .balloon-right p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .balloon {
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: black;
+    font-size: 16px;
+    background: #e0edff;
+    top: 45%;
+    left: 0;
+    right: 0;
+  }
+  
+  .balloon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+  }
+  
+  .balloon p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .block {
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: black;
+    font-size: 16px;
+    background: #ffebe0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+

@@ -1,4 +1,6 @@
 'use strict';
+var counter_timer;
+const pray_img = new Array("./asset/spoon_bented_right.png", "./asset/spoon_bented_left.png", "./asset/spoon.png");
 
 function start_timer(time) {
     //これではhiddenにならぬ
@@ -15,10 +17,13 @@ function show_result() {
     psychic_counter.disabled = true;
 
     // 画像切り替え
+    document.getElementById("spoon_img").src = pray_img[2];
     change_result_img();
 
     // スコア表示
-    document.getElementById("score_area").style.visibility = "visible";
+    //document.getElementById("score_area").style.visibility = "visible";
+
+    clearInterval(counter_timer);
 }
 
 function count_start() {
@@ -29,8 +34,7 @@ function count_start() {
     // スタートボタン非表示
     document.getElementById("count_down").style.visibility = "hidden";
 
-    setInterval(count_down, 1000);
-    setInterval(change_pray_img, 1000);
+    counter_timer = setInterval(count_down, 1000);
 
     //これではhiddenにならぬ
     //document.getElementById("score").style.visibility = "hidden";
@@ -42,6 +46,8 @@ function count_down(time_limmit) {
     var time = document.getElementById("time");
     var time_limmit = parseInt(time.innerText);
 
+    change_pray_img();
+
     if (time_limmit <= 0) {
         time.innerText = 0;
     } else {
@@ -49,7 +55,6 @@ function count_down(time_limmit) {
     }
 }
 
-const pray_img = new Array("./asset/sppon_bented_right.png", "./asset/sppon_bented_left.png");
 function change_pray_img() {
     var time = document.getElementById("time");
     var time_limmit = parseInt(time.innerText);
