@@ -23,7 +23,6 @@ function show_result() {
     // スコア表示
     //document.getElementById("score_area").style.visibility = "visible";
 
-    clearInterval(counter_timer);
 }
 
 function count_start() {
@@ -50,6 +49,7 @@ function count_down(time_limmit) {
 
     if (time_limmit <= 0) {
         time.innerText = 0;
+        clearInterval(counter_timer);
     } else {
         time.innerText = time_limmit - 1;
     }
