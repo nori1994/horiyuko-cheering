@@ -28,10 +28,11 @@ function show_result() {
 function count_start() {
     // カウンター有効化
     var psychic_counter = document.getElementById("psychic_counter");
+    psychic_counter.style.visibility = "visible";
     psychic_counter.disabled = false;
 
     // スタートボタン非表示
-    document.getElementById("count_down").style.visibility = "hidden";
+    document.getElementById("count_down").style.display = "none";
 
     counter_timer = setInterval(count_down, 1000);
 
