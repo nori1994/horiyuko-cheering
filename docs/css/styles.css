@@ -1,6 +1,11 @@
 @charset "UTF-8";
+
+body{
+    width: 100%;
+}
+
 table{
-    widows: 100%;
+    width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
 }
