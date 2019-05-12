@@ -13,7 +13,7 @@ div.inline_block{
     /*改行しないようにする
     display: inline-block;
     */
-    /*上手くいかない
+    /*
     float: left;*/
     text-align: center;
     vertical-align: middle;
@@ -151,22 +151,10 @@ div.inline_block{
 
 /*
 .desk_img_area, .button_on_img, .window_img_area{
-     何故かきかない
     float: left;
 }
 */
 
-.box14{
-    padding: 0.2em 0.5em;
-    margin: 2em 0;
-    background: #d6ebff;
-    box-shadow: 0px 0px 0px 10px #d6ebff;
-    border: dashed 2px white;
-}
-.box14 p {
-    margin: 0; 
-    padding: 0;
-}
 
 .balloon-left {
     visibility: hidden;
