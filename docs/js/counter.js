@@ -17,15 +17,15 @@ function change_result_img() {
         document.getElementById("success_score_area").style.visibility = "visible";
         document.getElementById("success_count").innerText = counter;
     } else if (counter > 30) {
-        document.getElementById("desk_img").src = result_img[0];
-        document.getElementById("desk_result_area").style.visibility = "visible";
-        document.getElementById("desk_score_area").style.visibility = "visible";
-        document.getElementById("desk_count").innerText = counter;
-    } else if (counter > 0) {
         document.getElementById("window_img").src = result_img[1];
         document.getElementById("window_result_area").style.visibility = "visible";
         document.getElementById("window_score_area").style.visibility = "visible";
         document.getElementById("window_count").innerText = counter;
+    } else if (counter > 0) {
+        document.getElementById("desk_img").src = result_img[0];
+        document.getElementById("desk_result_area").style.visibility = "visible";
+        document.getElementById("desk_score_area").style.visibility = "visible";
+        document.getElementById("desk_count").innerText = counter;
     } else {
         document.getElementById("no_pray_result_area").style.visibility = "visible";
         document.getElementById("no_pray_score_area").style.visibility = "visible";
